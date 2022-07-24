@@ -1,0 +1,120 @@
+/* шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=Play:wght@400;700&family=Russo+One&display=swap');
+
+* {
+    font-family: 'Russo One', sans-serif;
+    box-sizing:border-box;
+}
+
+/* main */
+.intro {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.video__media {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.intro::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.59);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* content */
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    min-height: 100vh;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+}
+/* logo */
+.navbar a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items:center
+
+}
+
+.logo img {
+    width: 90px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 30px;
+    color: #fff;
+
+}
+
+/* phone */
+
+.phone {
+    display: flex;
+    align-items: center
+
+}
+
+.phone a {
+    font-size: 30px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+/* основной текст главной */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.main-content h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 80px;
+    margin: 0;
+}
+
+.typed_row {
+    font-size: 30px;
+    color: #fff;
+}
+.color_text {
+    color: orange;
+}
