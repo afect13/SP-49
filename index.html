@@ -29,6 +29,16 @@
                             <img src="/img/logo.png" alt="логотип">
                             <span>SP49<span style="color: orange">.</span>ru</span>
                         </a>
+                        <div class="menu">
+                            <ul id="myMenu">
+                                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">главная</a></li>
+                                <li data-menuanchor="secondPage"><a href="#secondPage">сваебой</a></li>
+                                <li data-menuanchor="thirdPage"><a href="#thirdPage">экскаватор</a></li>
+                                <li data-menuanchor="fourthPage"><a href="#fourthPage">бульдозер</a></li>
+                                <li data-menuanchor="fifthPage"><a href="#fifthPage">ямобур</a></li>
+                                <li data-menuanchor="lastPage"><a href="#lastPage">контакты</a></li>
+                            </ul>
+                        </div>
                         <div class="phone">
                             <a href="tel:+79505124792">+7 (950) 512-47-92</a>
                         </div>
@@ -52,7 +62,7 @@
             <!-- /intro -->      
         </div>
         <!-- сваебой -->
-        <div class="section sec2">
+        <div class="section svaeboi">
             <div class="container">
                 <div class="column-left">
                     <h1>Аренда</h1>
@@ -124,15 +134,36 @@
 <script src="js/jquery.pagepiling.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#pagepiling').pagepiling({
-            navigation: {
-                'textColor': '#fff',
-                'bulletsColor': '#fff',
-                'position': 'right',
-                'tooltips': ['Аренда спецтехники', 'сваебой', 'экскаватор', 'бульдозер', 'Ямобур', 'Контакты']
-            },
+            $('#pagepiling').pagepiling({
+                menu: '#myMenu',
+                direction: 'vertical',
+                verticalCentered: true,
+                sectionsColor: [],
+                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage',  'lastPage'],
+                scrollingSpeed: 700,
+                easing: 'swing',
+                loopBottom: false,
+                loopTop: false,
+                css3: true,
+                navigation: {
+                    'textColor': '#000',
+                    'bulletsColor': '#000',
+                    'position': 'right',
+                    'tooltips': ['главная', 'сваебой', 'экскаватор', 'бульдозер', 'ямобур', 'контакты']
+                },
+                normalScrollElements: null,
+                normalScrollElementTouchThreshold: 5,
+                touchSensitivity: 5,
+                keyboardScrolling: true,
+                sectionSelector: '.section',
+                animateAnchor: false,
+
+                //events
+                onLeave: function (index, nextIndex, direction) { },
+                afterLoad: function (anchorLink, index) { },
+                afterRender: function () { },
+            });
         });
-    });
 </script>
 <!-- /Page Pilling -->
 <!-- Typed -->
