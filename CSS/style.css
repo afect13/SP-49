@@ -4,6 +4,8 @@
 * {
     font-family: 'Russo One', sans-serif;
     box-sizing:border-box;
+    padding: 0;
+    margin: 0;
 }
 
 /* main */
@@ -117,4 +119,263 @@
 }
 .color_text {
     color: orange;
+}
+
+/* общие параметры секций */
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0;
+    margin: auto;
+    max-width: 1146px;
+    height: 1024px;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 460px;
+
+}
+
+.figure {
+    width: 100%;
+    height: 350px;
+    border: 50px solid #FFA500;
+    border-radius: 100px;
+    border: 50px solid #FFA500;
+    border-radius: 100px;
+}
+
+.column-left h1 {
+    position: absolute;
+    margin: 0;
+    left: 117px;
+    top: 30px;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 148px;
+}
+
+.column-left h2 {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.column-left p {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0px 0;
+}
+
+.btn {
+    background-color: transparent;
+    border-radius: 22px;
+    border: 1px solid #000000;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-family: 'Play';
+    font-size: 17px;
+    padding: 10px 51px;
+    margin: 20px auto;
+    text-decoration: none;
+
+}
+
+.column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 560px;
+}
+
+.block-top {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(360deg, #c4cddf 0%, #FFA500 100%);
+}
+
+.block-top img {
+    position: absolute;
+    top: 170px;
+    left: -300px;
+}
+
+.block-top h3 {
+    font-family: 'Play';
+    font-style: normal;
+    padding-top: 76px;
+    text-align: center;
+    font-size: 64px;
+}
+
+.block-bot {
+    width: 100%;
+    height: 424px;
+    background: url(/img/buld.png);
+    background-size: cover;
+}
+
+
+.blur {
+    width: 100%;
+    height: 424px;
+    background: linear-gradient(180deg, #c4cddf 0%, rgba(255, 255, 255, 0) 42%);
+    background-size: cover;
+}
+
+/* кружки с анимацией */
+
+.parent {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 10px);
+    grid-template-rows: repeat(4, 10px);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    left: 505px;
+    bottom: 430px;
+    animation: block-c 4s ease-out 0s infinite normal forwards;
+}
+
+@keyframes block-c {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    40% {
+        transform: translate(2px, 2px);
+    }
+
+    60% {
+        transform: translate(-2px, 2px);
+    }
+
+    80% {
+        transform: translate(-2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.circle1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: orange;
+    border-radius: 50%;
+    ;
+}
+
+.circle3 {
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle4 {
+    grid-area: 1 / 4 / 2 / 5;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle5 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle6 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle7 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle8 {
+    grid-area: 2 / 4 / 3 / 5;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle9 {
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle10 {
+    grid-area: 3 / 2 / 4 / 3;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle11 {
+    grid-area: 3 / 3 / 4 / 4;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle12 {
+    grid-area: 3 / 4 / 4 / 5;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle13 {
+    grid-area: 4 / 1 / 5 / 2;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle14 {
+    grid-area: 4 / 2 / 5 / 3;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle15 {
+    grid-area: 4 / 3 / 5 / 4;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle16 {
+    grid-area: 4 / 4 / 5 / 5;
+    background-color: orange;
+    border-radius: 50%;
 }
