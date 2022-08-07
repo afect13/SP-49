@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/jquery.pagepiling.css">
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css" />
     <title>Аренда спецтехники</title>
 </head>
 <body>
@@ -31,12 +32,12 @@
                         </a>
                         <div class="menu">
                             <ul id="myMenu">
-                                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">главная</a></li>
-                                <li data-menuanchor="secondPage"><a href="#secondPage">сваебой</a></li>
-                                <li data-menuanchor="thirdPage"><a href="#thirdPage">экскаватор</a></li>
-                                <li data-menuanchor="fourthPage"><a href="#fourthPage">бульдозер</a></li>
-                                <li data-menuanchor="fifthPage"><a href="#fifthPage">ямобур</a></li>
-                                <li data-menuanchor="lastPage"><a href="#lastPage">контакты</a></li>
+                                <li data-menuanchor="main" class="active"><a href="#main">главная</a></li>
+                                <li data-menuanchor="svaeboi"><a href="#svaeboi">сваебой</a></li>
+                                <li data-menuanchor="excavator"><a href="#excavator">экскаватор</a></li>
+                                <li data-menuanchor="bulldozer"><a href="#bulldozer">бульдозер</a></li>
+                                <li data-menuanchor="yamobyr"><a href="#yamobyr">ямобур</a></li>
+                                <li data-menuanchor="contacts"><a href="#contacts">контакты</a></li>
                             </ul>
                         </div>
                         <div class="phone">
@@ -66,7 +67,7 @@
             <div class="container">
                 <div class="column-left">
                     <h1>Аренда</h1>
-                    <div class="figure"></div>
+                    <div class="figure-svaeboi"></div>
                     <h2>Сваебой</h2>
                     <p>Свайные работы являются основным этапом при строительства и от этого зависит устойчивость и прочность будущей
                         конструкции. Копер СП 49 зарекомендовал себя на Российском рынке как надежный сваебойный аппарат для
@@ -75,15 +76,15 @@
                         забивке сваи
                         под углом отклонение составляет 18 градусов, а максимальная масса сваи может равняется 5 тоннам.
                     </p>
-                    <button class="btn" src="#">Заказать</button>
+                    <a class="btn" data-menuanchor="contacts" href="#contacts">Заказать</a>
                 </div>
                 <!-- /.box-l -->
                 <div class="column-right">
                     <div class="block-top">
                         <h3>СП-49</h3>
-                        <img src="/img/svaeboi.png" alt="">
+                        <img class="static-img" src="/img/svaeboi.png" alt="">
                     </div>
-                    <div class="block-bot">
+                    <div class="block-bot__svaeboi">
                         <div class="blur"></div>
             
                         <div class="parent">
@@ -109,11 +110,124 @@
             </div>       
         </div>
         <!-- экскаватор -->
-        <div class="section sec3">
-        
+        <div class="section excavator">
+            <div class="container">
+                <div class="column-left">
+                    <h1>Аренда</h1>
+                    <div class="figure-excavator"></div>
+                    <h2>Экскаватор</h2>
+                    <p>Свайные работы являются основным этапом при строительства и от этого зависит устойчивость и прочность будущей
+                        конструкции. Копер СП 49 зарекомендовал себя на Российском рынке как надежный сваебойный аппарат для
+                        погружения свай.
+                        Основными характеристиками копра являются максимальная глубина на которую забивается свая - 12 метров. При
+                        забивке сваи
+                        под углом отклонение составляет 18 градусов, а максимальная масса сваи может равняется 5 тоннам.
+                    </p>
+                    <a class="btn" data-menuanchor="contacts" href="#contacts">Заказать</a>
+                </div>
+                <!-- /.box-l -->
+                <div class="column-right">
+                    <div class="block-top">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <h3>KOMATSU</h3>
+                                    <img class="swiper-img" src="/img/komatsu.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>HITACHI</h3>
+                                    <img class="swiper-img" src="/img/hitachi.png" alt="">    
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="block-bot__excavator">
+                        <div class="blur"></div>
+                        <div class="parent">
+                            <div class="circle1"> </div>
+                            <div class="circle2"> </div>
+                            <div class="circle3"> </div>
+                            <div class="circle4"> </div>
+                            <div class="circle5"> </div>
+                            <div class="circle6"> </div>
+                            <div class="circle7"> </div>
+                            <div class="circle8"> </div>
+                            <div class="circle9"> </div>
+                            <div class="circle10"> </div>
+                            <div class="circle11"> </div>
+                            <div class="circle12"> </div>
+                            <div class="circle13"> </div>
+                            <div class="circle14"> </div>
+                            <div class="circle15"> </div>
+                            <div class="circle16"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </div>
         <!-- бульдозер -->
-        <div class="section sec4">
+        <div class="section bulldozer">
+            <div class="container">
+                <div class="column-left">
+                    <h1>Аренда</h1>
+                    <div class="figure-bulldozer"></div>
+                    <h2>Бульдозер</h2>
+                    <p>Свайные работы являются основным этапом при строительства и от этого зависит устойчивость и прочность будущей
+                        конструкции. Копер СП 49 зарекомендовал себя на Российском рынке как надежный сваебойный аппарат для
+                        погружения свай.
+                        Основными характеристиками копра являются максимальная глубина на которую забивается свая - 12 метров. При
+                        забивке сваи
+                        под углом отклонение составляет 18 градусов, а максимальная масса сваи может равняется 5 тоннам.
+                    </p>
+                    <a class="btn" data-menuanchor="contacts" href="#contacts">Заказать</a>
+                </div>
+                <!-- /.box-l -->
+                <div class="column-right">
+                    <div class="block-top">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <h3>Б-130М</h3>
+                                    <img class="swiper-img" src="/img/b10.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Б-170М</h3>
+                                    <img class="swiper-img" src="/img/b170.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="block-bot__bulldozer">
+                        <div class="blur"></div>
+                        <div class="parent">
+                            <div class="circle1"> </div>
+                            <div class="circle2"> </div>
+                            <div class="circle3"> </div>
+                            <div class="circle4"> </div>
+                            <div class="circle5"> </div>
+                            <div class="circle6"> </div>
+                            <div class="circle7"> </div>
+                            <div class="circle8"> </div>
+                            <div class="circle9"> </div>
+                            <div class="circle10"> </div>
+                            <div class="circle11"> </div>
+                            <div class="circle12"> </div>
+                            <div class="circle13"> </div>
+                            <div class="circle14"> </div>
+                            <div class="circle15"> </div>
+                            <div class="circle16"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         
         </div>
         <!-- ямобур -->
@@ -139,7 +253,7 @@
                 direction: 'vertical',
                 verticalCentered: true,
                 sectionsColor: [],
-                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage',  'lastPage'],
+                anchors: ['main', 'svaeboi', 'excavator', 'bulldozer', 'yamobyr',  'contacts'],
                 scrollingSpeed: 700,
                 easing: 'swing',
                 loopBottom: false,
@@ -179,5 +293,23 @@
     });
 </script>
 <!-- typed -->
+<!-- swiper -->
+<script src="JS/swiper-bundle.min.js"></script>
+<script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    });
+</script>
+<!-- /swiper -->
 </body>
 </html>

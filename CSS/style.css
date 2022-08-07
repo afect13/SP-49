@@ -169,6 +169,9 @@
 }
 
 /* общие параметры секций */
+.section  {
+    background-color: white;
+}
 
 .container {
     position: relative;
@@ -191,13 +194,29 @@
 
 }
 
-.figure {
+.figure-svaeboi {
     width: 100%;
     height: 350px;
     border: 50px solid #FFA500;
     border-radius: 100px;
-    border: 50px solid #FFA500;
-    border-radius: 100px;
+}
+
+.figure-excavator {
+    width: 100%;
+    border-top: 175px solid transparent;
+    border-left: 350px solid orange;
+    border-bottom: 175px solid transparent;
+
+}
+
+.figure-bulldozer {
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    background: orange;
+    transform: rotate(-45deg);
+    border-radius: 25px;
+    z-index: -1;
 }
 
 .column-left h1 {
@@ -261,7 +280,19 @@
     background: linear-gradient(360deg, #c4cddf 0%, #FFA500 100%);
 }
 
-.block-top img {
+.swiper {
+    width: 680px;
+    right: -60px;
+    height: 525px;
+}
+
+.swiper-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.static-img {
     position: absolute;
     top: 170px;
     left: -300px;
@@ -275,11 +306,27 @@
     font-size: 64px;
 }
 
-.block-bot {
+.block-bot__svaeboi {
     width: 100%;
     height: 424px;
     background: url(/img/buld.png);
     background-size: cover;
+}
+
+.block-bot__excavator {
+    width: 100%;
+    height: 424px;
+    background: url(/img/excavator.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.block-bot__bulldozer {
+    width: 100%;
+    height: 424px;
+    background: url(/img/bulldozer.png);
+    background-size: cover;
+    overflow: hidden;
 }
 
 
@@ -426,3 +473,4 @@
     background-color: orange;
     border-radius: 50%;
 }
+
