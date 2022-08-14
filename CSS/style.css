@@ -94,7 +94,7 @@
     flex-direction: row;
     list-style: none;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 1.7vh;
     color: #fff;
     cursor: pointer;
     
@@ -103,7 +103,7 @@
 
 
 .menu #myMenu li {
-    width: 160px;
+    width: 15.6vh;
     padding-left: 2px;
     padding-right: 2px;
 
@@ -115,8 +115,6 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-left: 15px;
-    margin-right: 15px;
     border: 1px solid white;
     border-radius: 25px;
     padding: 10px 15px 10px 15px;
@@ -171,6 +169,7 @@
 /* общие параметры секций */
 .section  {
     background-color: white;
+    max-height: 900px;
 }
 
 .container {
@@ -182,7 +181,7 @@
     padding: 0;
     margin: auto;
     max-width: 1146px;
-    height: 1024px;
+
 }
 
 .column-left {
@@ -191,32 +190,41 @@
     justify-content: space-around;
     align-items: flex-start;
     width: 460px;
+    height: 100vh;
 
 }
 
 .figure-svaeboi {
-    width: 100%;
-    height: 350px;
-    border: 50px solid #FFA500;
-    border-radius: 100px;
+    width: 38vh;
+    height: 37.1vh;
+    border: 5vh solid #FFA500;
+    border-radius: 9.7vh;
 }
 
 .figure-excavator {
     width: 100%;
-    border-top: 175px solid transparent;
-    border-left: 350px solid orange;
-    border-bottom: 175px solid transparent;
+    border-top: 17vh solid transparent;
+    border-left: 35vh solid orange;
+    border-bottom: 17vh solid transparent;
 
 }
 
 .figure-bulldozer {
     margin-top: 50px;
-    width: 300px;
-    height: 300px;
+    width: 30vh;
+    height: 30vh;
     background: orange;
     transform: rotate(-45deg);
     border-radius: 25px;
     z-index: -1;
+}
+
+.figure-yamobur {
+    width: 38vh;
+    height: 37.1vh;
+    border: 5vh solid #FFA500;
+    border-radius: 90.7vh;
+
 }
 
 .column-left h1 {
@@ -227,26 +235,26 @@
     font-family: 'Play';
     font-style: normal;
     font-weight: 700;
-    font-size: 128px;
-    line-height: 148px;
+    font-size: 12.5vh;
+    line-height: 14.4vh;
 }
 
 .column-left h2 {
     font-family: 'Play';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 46px;
+    font-size: 4.0vh;
+    line-height: 4.6vh;
     text-align: center;
-    margin: 20px auto;
+    margin: 2.0vh auto;
 }
 
 .column-left p {
     font-family: 'Play';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 2.4vh;
+    line-height: 2.8vh;
     margin: 0px 0;
 }
 
@@ -271,12 +279,13 @@
     justify-content: space-around;
     align-items: flex-start;
     width: 560px;
+    height: 100vh;
 }
 
 .block-top {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 58.5vh;
     background: linear-gradient(360deg, #c4cddf 0%, #FFA500 100%);
 }
 
@@ -289,33 +298,36 @@
 .swiper-img {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    height: 35.1vh;
+
 }
 
 .static-img {
     position: absolute;
-    top: 170px;
-    left: -300px;
+    top: 20.6vh;
+    left: -20.3vh;
+    height: 29.2vh;
 }
 
 .block-top h3 {
     font-family: 'Play';
     font-style: normal;
-    padding-top: 76px;
+    padding-top: 7.4vh;
     text-align: center;
-    font-size: 64px;
+    font-size: 6.25vh;
 }
 
 .block-bot__svaeboi {
     width: 100%;
-    height: 424px;
+    height: 41.5vh;
     background: url(/img/buld.png);
     background-size: cover;
 }
 
 .block-bot__excavator {
     width: 100%;
-    height: 424px;
+    height: 41.5vh;
     background: url(/img/excavator.png);
     background-size: cover;
     overflow: hidden;
@@ -323,16 +335,25 @@
 
 .block-bot__bulldozer {
     width: 100%;
-    height: 424px;
+    height: 41.5vh;
     background: url(/img/bulldozer.png);
     background-size: cover;
     overflow: hidden;
 }
 
+.block-bot__yamobur {
+    width: 100%;
+    height: 41.5vh;
+    background: url(/img/yamoburpage.png);
+    background-size: cover;
+    overflow: hidden;
+
+}
+
 
 .blur {
     width: 100%;
-    height: 424px;
+    height: 41.5vh;
     background: linear-gradient(180deg, #c4cddf 0%, rgba(255, 255, 255, 0) 42%);
     background-size: cover;
 }
@@ -342,12 +363,12 @@
 .parent {
     position: absolute;
     display: grid;
-    grid-template-columns: repeat(4, 10px);
-    grid-template-rows: repeat(4, 10px);
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    left: 505px;
-    bottom: 430px;
+    grid-template-columns: repeat(4, 1vh);
+    grid-template-rows: repeat(4, 1vh);
+    grid-column-gap: 3.9vh;
+    grid-row-gap: 3.9vh;
+    left: 517px;
+    bottom: 35vh;
     animation: block-c 4s ease-out 0s infinite normal forwards;
 }
 
