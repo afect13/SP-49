@@ -237,6 +237,7 @@
     font-weight: 700;
     font-size: 12.5vh;
     line-height: 14.4vh;
+
 }
 
 .column-left h2 {
@@ -306,7 +307,7 @@
 .static-img {
     position: absolute;
     top: 20.6vh;
-    left: -20.3vh;
+    left: -25.3vh;
     height: 29.2vh;
 }
 
@@ -316,6 +317,8 @@
     padding-top: 7.4vh;
     text-align: center;
     font-size: 6.25vh;
+    text-shadow: 1px 1px 1px #000;
+    color: #ffffff;
 }
 
 .block-bot__svaeboi {
@@ -496,8 +499,9 @@
 }
 /* последняя секция */
 .contact {
-    background: url(/img/construction.png);
-    background-size: cover;
+    background: url(/img/construction-site.jpg);
+    background-size: cover ;
+    height: 100vh;
 }
 
 .contact-info {
