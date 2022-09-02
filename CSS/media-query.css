@@ -4,9 +4,21 @@
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
+@media (min-width: 1281px) and (max-width: 1390px) {
   
-  /* CSS */
+.phone a {
+    font-size: 24px;
+  }
+.logo span {
+  font-size: 24px;
+}
+
+.logo img {
+  width: 80px;
+  height: 24px;
+
+}
+
   
 }
 

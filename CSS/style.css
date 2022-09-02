@@ -17,10 +17,11 @@
 
 .video__media {
     width: 100%;
-    height: auto;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
+    object-fit: cover;
 }
 
 .intro::after {
@@ -94,7 +95,7 @@
     flex-direction: row;
     list-style: none;
     text-transform: uppercase;
-    font-size: 1.7vh;
+    font-size: 14px;
     color: #fff;
     cursor: pointer;
     
@@ -103,7 +104,7 @@
 
 
 .menu #myMenu li {
-    width: 15.6vh;
+    width: 130px;
     padding-left: 2px;
     padding-right: 2px;
 
@@ -317,7 +318,6 @@
     padding-top: 7.4vh;
     text-align: center;
     font-size: 6.25vh;
-    text-shadow: 1px 1px 1px #000;
     color: #ffffff;
 }
 
@@ -526,7 +526,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
+    width: 620px;
     height: 300px;
     color:white;
     background: rgba(89, 89, 89, 0.27);
@@ -554,10 +554,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .phone-info {
     display: flex;
+    font-family: 'Play';
+    font-style: normal;
 
 }
 
@@ -566,5 +569,16 @@
 
 }
 
+.phone-info p {
+    font-family: 'Play';
+    font-style: normal;
+    margin-left: 15px;
+}
 
+.mail-info p {
+    font-family: 'Play';
+    font-style: normal;
+    margin-left: 15px;
+
+}
 
