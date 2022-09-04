@@ -29,8 +29,90 @@
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   
-  /* CSS */
+.phone a {
+    font-size: 16px;
+  }
+
+  .logo span {
+    font-size: 16px;
+  }
+
+.logo img {
+    width: 60px;
+    height: 18px;
+
+  }
+
+.menu #myMenu a {
+  font-size: 12px;
+  padding: 8px 15px 8px 15px;
   
+}
+
+.menu #myMenu li {
+  width: 100px;
+  
+}
+
+.main-content h2 {
+  font-size: 60px;
+}
+
+.typed_row {
+  font-size: 20px;
+}
+
+.container {
+  width: 860px;
+}
+
+.column-right {
+  width: 410px;
+}
+
+.column-left {
+  width: 410px;
+}
+
+.column-left h1 {
+  font-size: 70px;
+}
+
+
+.block-top h3 {
+  font-size: 35px;
+  padding-top: 60px;
+}
+
+.static-img { 
+  top: 130px;
+  left: -190px;
+  height: 200px;
+}
+
+.column-left h2 {
+  font-size: 26px;
+}
+
+.column-left p {
+  font-size: 16px;
+}
+
+.parent {
+  grid-template-columns: repeat(4, 5px);
+  grid-template-rows: repeat(4, 5px);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  left: 407px;
+  bottom: 45vh; 
+}
+
+.swiper {
+  width: 530px;
+}
+
+
+
 }
 
 /* 
@@ -39,9 +121,99 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
+.menu #myMenu li {
+      display: none;
+}
+
+
+
+.phone a {
+    display: none;
+}
+
+.logo span {
+    font-size: 18px;
+}
+
+.logo img {
+    width: 70px;
+    height: 20px;
+}
+
+#pp-nav {
+  display: none;
+}
+
+
+.main-content h2 {
+    font-size: 60px;
+  }
+
+.typed_row {
+    font-size: 20px;
+  }
+
+  .container {
+    width: 660px;
+  }
+
+  .column-right {
+    width: 300px;
+  }
+
+  .column-left {
+    width: 300px;
+  }
+
+  .column-left h1 {
+    font-size: 60px;
+  }
+
+
+  .block-top h3 {
+    font-size: 25px;
+    padding-top: 70px;
+  }
+
+  .static-img {
+    top: 120px;
+    left: -190px;
+    height: 180px;
+  }
+
+  .column-left h2 {
+    font-size: 26px;
+  }
+
+  .column-left p {
+    font-size: 14px;
+  }
+
+  .parent {
+    grid-template-columns: repeat(4, 5px);
+    grid-template-rows: repeat(4, 5px);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    left: 307px;
+    bottom: 45vh;
+  }
+
+  .swiper {
+    width: 430px;
+  }
+.swiper-button-next:after {
+  margin-left: -40px;
   
-  /* CSS */
-  
+}
+.swiper-button-prev:after {
+  margin-right: -40px;
+}
+
+.swiper-img {
+  height: 30vh;
+}
+
 }
 
 /* 

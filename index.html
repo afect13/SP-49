@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/jquery-simple-mobilemenu.css"> 
     <link rel="stylesheet" href="CSS/media-query.css">
     <link rel="stylesheet" href="CSS/jquery.pagepiling.css">
     <link rel="stylesheet" href="CSS/swiper-bundle.min.css" />
@@ -57,7 +58,16 @@
                         </div>
                     </div>
                     <!-- конец -->
-                    <div class="menu"></div>
+                    <div class="mmenu">
+                        <ul class="mobile_menu">
+                            <li data-menuanchor="main" class="active"><a href="#main">главная</a></li>
+                            <li data-menuanchor="svaeboi"><a href="#svaeboi">сваебой</a></li>
+                            <li data-menuanchor="excavator"><a href="#excavator">экскаватор</a></li>
+                            <li data-menuanchor="bulldozer"><a href="#bulldozer">бульдозер</a></li>
+                            <li data-menuanchor="yamobyr"><a href="#yamobyr">ямобур</a></li>
+                            <li data-menuanchor="contacts"><a href="#contacts">контакты</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- /content -->
             </div>
@@ -394,5 +404,33 @@
     });
 </script>
 <!-- /swiper -->
+<!-- mobile menu -->
+
+<script src="JS/jquery-simple-mobilemenu.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+            $(".mobile_menu").simpleMobileMenu({
+                //Hamburger Id
+                "hamburgerId": "sm_menu_ham",
+                //Menu Wrapper Class
+                "wrapperClass": "sm_menu_outer",
+                //Submenu Class
+                "submenuClass": "submenu",
+                //Menu Style
+                "menuStyle": "slide",
+                // Callback - Menu loaded 
+                "onMenuLoad": function (menu) {
+                    console.log("menu loaded")
+                    console.log(menu)
+                },
+                //Callback - menu toggle(open/close)
+                "onMenuToggle": function (menu, open) {
+                    console.log(open)
+                }
+            });
+        })
+</script>
+<!-- /mobile menu -->
 </body>
 </html>
