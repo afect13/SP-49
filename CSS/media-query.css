@@ -1,4 +1,7 @@
 
+@media (min-width: 1391px) {
+
+}
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -18,6 +21,8 @@
   height: 24px;
 
 }
+
+
 
   
 }
@@ -214,6 +219,8 @@
   height: 30vh;
 }
 
+
+
 }
 
 /* 
@@ -223,7 +230,101 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
-  /* CSS */
+.menu #myMenu li {
+    display: none;
+  }
+
+
+
+  .phone a {
+    display: none;
+  }
+
+  .logo span {
+    font-size: 18px;
+  }
+
+  .logo img {
+    width: 70px;
+    height: 20px;
+  }
+
+  #pp-nav {
+    display: none;
+  }
+
+
+  .main-content h2 {
+    font-size: 60px;
+  }
+
+  .typed_row {
+    font-size: 20px;
+  }
+
+  .container {
+    width: 660px;
+  }
+
+  .column-right {
+    width: 300px;
+  }
+
+  .column-left {
+    width: 300px;
+  }
+
+  .column-left h1 {
+    font-size: 60px;
+  }
+
+
+  .block-top h3 {
+    font-size: 25px;
+    padding-top: 70px;
+  }
+
+  .static-img {
+    top: 120px;
+    left: -190px;
+    height: 180px;
+  }
+
+  .column-left h2 {
+    font-size: 26px;
+  }
+
+  .column-left p {
+    font-size: 14px;
+  }
+
+  .parent {
+    grid-template-columns: repeat(4, 5px);
+    grid-template-rows: repeat(4, 5px);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    left: 307px;
+    bottom: 45vh;
+  }
+
+  .swiper {
+    width: 430px;
+  }
+
+  .swiper-button-next:after {
+    margin-left: -40px;
+
+  }
+
+  .swiper-button-prev:after {
+    margin-right: -40px;
+  }
+
+  .swiper-img {
+    height: 30vh;
+  }
+
+
   
 }
 
@@ -234,17 +335,358 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   
-  /* CSS */
+.menu #myMenu li {
+    display: none;
+  }
+
+  .phone {
+    display: none;
+
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .logo span {
+    font-size: 29px;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  #pp-nav {
+    display: none;
+  }
+
+
+  .main-content h2 {
+    font-size: 45px;
+  }
+
+  .typed_row {
+    font-size: 18px;
+  }
+
+  .figure-svaeboi {
+    position: absolute;
+    top: 0px;
+    width: 270px;
+    height: 260px;
+    border: 35px solid #FFA500;
+    border-radius: 60px;
+
+  }
+
+  .figure-excavator {
+    position: absolute;
+    top: 0px;
+    border-top: 15vh solid transparent;
+    border-left: 32vh solid orange;
+    border-bottom: 15vh solid transparent;
+  }
+
+  .figure-bulldozer {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 22vh;
+    height: 22vh;
+    border-radius: 5px;
+    margin-top: 0px;
+  }
+
+  .figure-yamobur {
+    position: absolute;
+    top: 30px;
+    width: 32vh;
+    height: 32vh;
+    border: 5vh solid #FFA500;
+
+  }
+
+  .container {
+    width: 90%;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .block-bot__svaeboi {
+    display: none;
+  }
+
+  .block-bot__excavator {
+    display: none;
+  }
+
+  .block-bot__bulldozer {
+    display: none;
+  }
+
+  .block-top {
+    background: none;
+    height: 35vh;
+  }
+
+  .swiper {
+    width: 100%;
+    right: 0;
+  }
+
+  .sm_menu_outer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-img {
+    height: 22vh;
+  }
+
+  .static-img {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .block-top h3 {
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 35px;
+  }
+
+  .column-right {
+    width: 100%;
+    order: 1;
+    height: 35vh;
+
+  }
+
+  .column-left {
+    width: 100%;
+    order: 2;
+    height: 65vh;
+    padding-top: 10px;
+  }
+
+  .column-left h1 {
+    display: none;
+  }
+
+  .column-left h2 {
+    font-size: 26px;
+  }
+
+  .column-left p {
+    font-size: 18px;
+  }
+
+  .parent {
+    display: none;
+  }
+
+  .call {
+    width: 300px
+  }
+
+  .call-info p {
+    font-size: 20px;
+  }
+
+  .phone-info svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .mail-info svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .phone-info p {
+    text-decoration: none;
+  }
+  .block-bot__yamobur {
+    display: none;
+  }
   
 }
 
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
+
 
 @media (min-width: 320px) and (max-width: 480px) {
   
-  /* CSS */
-  
+.menu #myMenu li {
+    display: none;
+  }
+
+.phone  {
+    display: none;
+
+  }
+
+.logo {
+  margin-left: 20px;
 }
+
+.logo span {
+    font-size: 29px;
+  }
+
+.logo img {
+    display: none;
+  }
+
+#pp-nav {
+    display: none;
+  }
+
+
+.main-content h2 {
+    font-size: 45px;
+  }
+
+.typed_row {
+    font-size: 18px;
+  }
+.figure-svaeboi {
+  position: absolute;
+  top: 0px;
+  width: 270px;
+  height: 260px;
+  border: 35px solid #FFA500;
+  border-radius: 60px;
+
+}
+
+.figure-excavator {
+  position: absolute;
+  top: 0px;
+  border-top: 15vh solid transparent;
+  border-left: 32vh solid orange;
+  border-bottom: 15vh solid transparent;
+}
+
+.figure-bulldozer {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  width: 22vh;
+  height: 22vh;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+
+.figure-yamobur {
+  position: absolute;
+  top: 30px;
+  width: 32vh;
+  height: 32vh;
+  border: 5vh solid #FFA500;
+
+}
+
+.container {
+  width: 90%;
+  flex-direction:column;
+  height: 100vh;
+}
+
+.block-bot__svaeboi {
+    display: none;
+}
+
+.block-bot__excavator {
+  display: none;
+}
+
+.block-bot__bulldozer {
+  display: none;
+}
+
+.block-top {
+  background:none;
+  height: 35vh;
+}
+.swiper {
+  width: 100%;
+  right: 0;
+}
+.sm_menu_outer {
+  width: 100%;
+  height: 100%;
+}
+.swiper-img {
+  height: 22vh;
+}
+.static-img {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.block-top h3 {
+  color:black;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-size: 35px;
+}
+.column-right {
+  width: 100%;
+  order: 1;
+  height: 35vh;
+
+}
+.column-left {
+  width: 100%;
+  order:2;
+  height: 65vh;
+  padding-top: 10px;
+}
+
+  .column-left h1 {
+    display: none;
+  }
+
+  .column-left h2 {
+    font-size: 26px;
+  }
+
+  .column-left p {
+    font-size: 18px;
+  }
+
+  .parent {
+    display: none;
+  }
+
+  .call {
+    width: 300px
+  }
+
+  .call-info p {
+    font-size: 20px;
+  }
+
+  .phone-info svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .mail-info svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .phone-info p {
+    text-decoration: none;
+  }
+  .block-bot__yamobur {
+    display: none;
+  }
+
+}
+  

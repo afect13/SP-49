@@ -65,7 +65,7 @@
                             <li data-menuanchor="excavator"><a href="#excavator">экскаватор</a></li>
                             <li data-menuanchor="bulldozer"><a href="#bulldozer">бульдозер</a></li>
                             <li data-menuanchor="yamobyr"><a href="#yamobyr">ямобур</a></li>
-                            <li data-menuanchor="contacts"><a href="#contacts">контакты</a></li>
+                            <li data-menuanchor="contacts"><a class="open" href="#contacts">контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -431,6 +431,16 @@
             });
         })
 </script>
+<script>
+    Array.from(document.querySelectorAll('ul.mobile_menu > li > a'), b => b.addEventListener('click', () => {
+            Array.from(
+                document.querySelectorAll("body.mmactive, div#sm_menu_ham"),
+                e => e.className = "")
+
+            document.getElementsByClassName('sm_menu_outer')[0].classList.remove("active");
+        }, false));
+</script>
+
 <!-- /mobile menu -->
 </body>
 </html>
