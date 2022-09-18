@@ -1,4 +1,4 @@
-/* шрифты */
+
 @import url('https://fonts.googleapis.com/css2?family=Cuprum&family=Play:wght@400;700&family=Russo+One&display=swap');
 
 * {
@@ -8,14 +8,14 @@
     margin: 0;
 }
 
-/* main */
+
 .intro {
     min-height: 100vh;
     overflow: hidden;
     position: relative;
 }
 
-.video__media {
+.media {
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -39,7 +39,7 @@
     z-index: 1;
 }
 
-/* content */
+
 
 .content {
     position: relative;
@@ -59,7 +59,7 @@
     width: 100%;
     height: 80px;
 }
-/* logo */
+
 .navbar a {
     text-decoration: none;
 }
@@ -83,7 +83,7 @@
 
 }
 
-/* menu */
+
 .menu {
     display: flex;
     align-items: center;
@@ -128,7 +128,7 @@
     color: orange;
 }
 
-/* phone */
+
 
 .phone {
     display: flex;
@@ -142,7 +142,7 @@
     margin-right: 20px;
 }
 
-/* основной текст главной */
+
 
 .main-content {
     display: flex;
@@ -167,7 +167,7 @@
     color: orange;
 }
 
-/* общие параметры секций */
+
 .section  {
     background-color: white;
     max-height: 900px;
@@ -324,14 +324,14 @@
 .block-bot__svaeboi {
     width: 100%;
     height: 41.5vh;
-    background: url(/img/buld.png);
+    background: url(/img/buld.webp);
     background-size: cover;
 }
 
 .block-bot__excavator {
     width: 100%;
     height: 41.5vh;
-    background: url(/img/excavator.png);
+    background: url(/img/excavator.webp);
     background-size: cover;
     overflow: hidden;
 }
@@ -339,7 +339,7 @@
 .block-bot__bulldozer {
     width: 100%;
     height: 41.5vh;
-    background: url(/img/bulldozer.png);
+    background: url(/img/bulldozer.webp);
     background-size: cover;
     overflow: hidden;
 }
@@ -347,7 +347,7 @@
 .block-bot__yamobur {
     width: 100%;
     height: 41.5vh;
-    background: url(/img/yamoburpage.png);
+    background: url(/img/yamoburpage.webp);
     background-size: cover;
     overflow: hidden;
 
@@ -361,7 +361,7 @@
     background-size: cover;
 }
 
-/* кружки с анимацией */
+
 
 .parent {
     position: absolute;
@@ -499,7 +499,7 @@
 }
 /* последняя секция */
 .contact {
-    background: url(/img/construction-site.jpg);
+    background: url(/img/construction-site.webp);
     background-size: cover ;
     height: 100vh;
 }
@@ -569,16 +569,21 @@
 
 }
 
-.phone-info p {
+.phone-to  {
+    font-size: 40px;
+    color: #fff;
     font-family: 'Play';
     font-style: normal;
     margin-left: 15px;
+    text-decoration: none;
 }
 
-.mail-info p {
+.mail-to {
+    font-size: 40px;
+    color: #fff;
     font-family: 'Play';
     font-style: normal;
     margin-left: 15px;
-
+    text-decoration: none;
 }
 

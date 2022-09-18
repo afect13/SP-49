@@ -2,10 +2,7 @@
 @media (min-width: 1391px) {
 
 }
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
+
 
 @media (min-width: 1281px) and (max-width: 1390px) {
   
@@ -21,16 +18,10 @@
   height: 24px;
 
 }
-
-
-
   
 }
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
+
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   
@@ -120,10 +111,7 @@
 
 }
 
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
@@ -223,10 +211,6 @@
 
 }
 
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
@@ -328,10 +312,192 @@
   
 }
 
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+  .menu #myMenu li {
+      display: none;
+    }
+  
+    .phone {
+      display: none;
+  
+    }
+  
+    .logo {
+      margin-left: 20px;
+    }
+  
+    .logo span {
+      font-size: 29px;
+    }
+  
+    .logo img {
+      display: none;
+    }
+  
+    #pp-nav {
+      display: none;
+    }
+  
+  
+    .main-content h2 {
+      font-size: 45px;
+    }
+  
+    .typed_row {
+      font-size: 18px;
+    }
+  
+    .figure-svaeboi {
+      position: absolute;
+      top: 0px;
+      width: 270px;
+      height: 260px;
+      border: 35px solid #FFA500;
+      border-radius: 60px;
+  
+    }
+  
+    .figure-excavator {
+      position: absolute;
+      top: 0px;
+      border-top: 15vh solid transparent;
+      border-left: 32vh solid orange;
+      border-bottom: 15vh solid transparent;
+    }
+  
+    .figure-bulldozer {
+      position: absolute;
+      top: 30px;
+      left: 10px;
+      width: 22vh;
+      height: 22vh;
+      border-radius: 5px;
+      margin-top: 0px;
+    }
+  
+    .figure-yamobur {
+      position: absolute;
+      top: 30px;
+      width: 32vh;
+      height: 32vh;
+      border: 5vh solid #FFA500;
+  
+    }
+  
+    .container {
+      width: 90%;
+      flex-direction: column;
+      height: 100vh;
+    }
+  
+    .block-bot__svaeboi {
+      display: none;
+    }
+  
+    .block-bot__excavator {
+      display: none;
+    }
+  
+    .block-bot__bulldozer {
+      display: none;
+    }
+  
+    .block-top {
+      background: none;
+      height: 35vh;
+    }
+  
+    .swiper {
+      width: 100%;
+      right: 0;
+    }
+  
+    .sm_menu_outer {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .swiper-img {
+      height: 22vh;
+    }
+  
+    .static-img {
+      position: static;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  
+    .block-top h3 {
+      color: black;
+      padding-top: 20px;
+      padding-bottom: 50px;
+      font-size: 35px;
+    }
+  
+    .column-right {
+      width: 100%;
+      order: 1;
+      height: 35vh;
+  
+    }
+  
+    .column-left {
+      width: 100%;
+      order: 2;
+      height: 65vh;
+      padding-top: 10px;
+    }
+  
+    .column-left h1 {
+      display: none;
+    }
+  
+    .column-left h2 {
+      font-size: 26px;
+    }
+  
+    .column-left p {
+      font-size: 18px;
+    }
+  
+    .parent {
+      display: none;
+    }
+  
+    .call {
+      width: 300px
+    }
+  
+    .call-info a {
+      font-size: 20px;
+    }
+  
+    .phone-info svg {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .mail-info svg {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .phone-to {
+      text-decoration: none;
+    }
+  
+    .block-bot__yamobur {
+      display: none;
+    }
+  
+  }
+
+
+
+
+
 
 @media (min-width: 481px) and (max-width: 767px) {
   
@@ -491,7 +657,7 @@
     width: 300px
   }
 
-  .call-info p {
+  .call-info a {
     font-size: 20px;
   }
 
@@ -505,7 +671,7 @@
     height: 30px;
   }
 
-  .phone-info p {
+  .phone-to  {
     text-decoration: none;
   }
   .block-bot__yamobur {
@@ -667,7 +833,7 @@
     width: 300px
   }
 
-  .call-info p {
+  .call-info a {
     font-size: 20px;
   }
 
@@ -681,7 +847,7 @@
     height: 30px;
   }
 
-  .phone-info p {
+  .phone-to  {
     text-decoration: none;
   }
   .block-bot__yamobur {
