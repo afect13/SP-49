@@ -94,7 +94,7 @@
   font-size: 16px;
 }
 
-.parent {
+.parent-circle {
   grid-template-columns: repeat(4, 5px);
   grid-template-rows: repeat(4, 5px);
   grid-column-gap: 25px;
@@ -183,7 +183,7 @@
     font-size: 14px;
   }
 
-  .parent {
+  .parent-circle {
     grid-template-columns: repeat(4, 5px);
     grid-template-rows: repeat(4, 5px);
     grid-column-gap: 25px;
@@ -282,7 +282,7 @@
     font-size: 14px;
   }
 
-  .parent {
+  .parent-circle {
     grid-template-columns: repeat(4, 5px);
     grid-template-rows: repeat(4, 5px);
     grid-column-gap: 25px;
@@ -391,15 +391,15 @@
       height: 100vh;
     }
   
-    .block-bot__svaeboi {
+    .block-bot-svaeboi {
       display: none;
     }
   
-    .block-bot__excavator {
+    .block-bot-excavator {
       display: none;
     }
   
-    .block-bot__bulldozer {
+    .block-bot-bulldozer {
       display: none;
     }
   
@@ -462,7 +462,7 @@
       font-size: 18px;
     }
   
-    .parent {
+    .parent-circle {
       display: none;
     }
   
@@ -473,6 +473,11 @@
     .call-info a {
       font-size: 20px;
     }
+    .call-info span {
+      font-size: 20px;
+    }
+
+
   
     .phone-info svg {
       width: 30px;
@@ -483,12 +488,17 @@
       width: 30px;
       height: 30px;
     }
+
+    .address-info svg {
+      width: 30px;
+      height: 30px;
+    }
   
     .phone-to {
       text-decoration: none;
     }
   
-    .block-bot__yamobur {
+    .block-bot-yamobur {
       display: none;
     }
   
@@ -578,15 +588,15 @@
     height: 100vh;
   }
 
-  .block-bot__svaeboi {
+  .block-bot-svaeboi {
     display: none;
   }
 
-  .block-bot__excavator {
+  .block-bot-excavator {
     display: none;
   }
 
-  .block-bot__bulldozer {
+  .block-bot-bulldozer {
     display: none;
   }
 
@@ -649,7 +659,7 @@
     font-size: 18px;
   }
 
-  .parent {
+  .parent-circle {
     display: none;
   }
 
@@ -658,6 +668,9 @@
   }
 
   .call-info a {
+    font-size: 20px;
+  }
+  .call-info span {
     font-size: 20px;
   }
 
@@ -670,11 +683,16 @@
     width: 30px;
     height: 30px;
   }
+  .address-info svg {
+    width: 30px;
+    height: 30px;
+  }
+  
 
   .phone-to  {
     text-decoration: none;
   }
-  .block-bot__yamobur {
+  .block-bot-yamobur {
     display: none;
   }
   
@@ -760,15 +778,15 @@
   height: 100vh;
 }
 
-.block-bot__svaeboi {
+.block-bot-svaeboi {
     display: none;
 }
 
-.block-bot__excavator {
+.block-bot-excavator {
   display: none;
 }
 
-.block-bot__bulldozer {
+.block-bot-bulldozer {
   display: none;
 }
 
@@ -825,7 +843,7 @@
     font-size: 18px;
   }
 
-  .parent {
+  .parent-circle {
     display: none;
   }
 
@@ -835,6 +853,12 @@
 
   .call-info a {
     font-size: 20px;
+  }
+  .call-info span {
+      font-size: 20px;
+  }
+  .call-info p {
+    font-size: 30px;
   }
 
   .phone-info svg {
@@ -846,11 +870,15 @@
     width: 30px;
     height: 30px;
   }
+  .address-info svg {
+    width: 30px;
+    height: 30px;
+  }
 
   .phone-to  {
     text-decoration: none;
   }
-  .block-bot__yamobur {
+  .block-bot-yamobur {
     display: none;
   }
 
